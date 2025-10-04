@@ -30,9 +30,9 @@ public class FillCommand implements Command {
         if (value >= 0) {
           return value;
         }
-        io.print("Please enter a non-negative integer (0 or greater).");
+        io.print("\nPlease enter a non-negative integer (0 or greater).");
       } catch (Exception e) {
-        io.print("Invalid Input! Please enter a whole number.");
+        io.print("\nInvalid Input! Please enter a whole number.");
       }
     }
   }

@@ -7,7 +7,7 @@ public class CleanCommand implements Command {
 
   @Override
   public boolean execute(CoffeeMachine machine, ConsoleIO io) {
-    io.print("I have been cleaned!");
+    io.print("\nI have been cleaned!");
     machine.clean();
     return true;
   }

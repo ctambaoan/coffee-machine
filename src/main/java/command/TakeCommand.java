@@ -7,7 +7,7 @@ public class TakeCommand implements Command {
 
   @Override
   public boolean execute(CoffeeMachine machine, ConsoleIO io) {
-    io.print("\nI gave you $%d".formatted(machine.takeCash()));
+    io.print("\nHere's your $%d".formatted(machine.takeCash()));
     return true;
   }
 

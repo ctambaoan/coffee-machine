@@ -16,7 +16,7 @@ public class BuyCommand implements Command {
       case "1" -> machine.makeCoffee(Coffee.ESPRESSO);
       case "2" -> machine.makeCoffee(Coffee.LATTE);
       case "3" -> machine.makeCoffee(Coffee.CAPPUCCINO);
-      default -> "Invalid Input!";
+      default -> "\nInvalid Input!";
     };
 
     io.print(result);

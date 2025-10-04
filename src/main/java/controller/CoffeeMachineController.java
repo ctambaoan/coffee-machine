@@ -18,7 +18,7 @@ public enum CoffeeMachineController {
   }
 
   public void run() {
-    boolean shouldContinue = true;
+    var shouldContinue = true;
     while (shouldContinue) {
       io.print("\nWrite action (buy, fill, take, clean, remaining, exit):");
       var action = io.readLine();

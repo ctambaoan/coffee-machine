@@ -23,19 +23,19 @@ public enum CoffeeMachine {
 
   public String makeCoffee(Coffee coffee) {
     if (cleaningCounter >= MAX_COFFEE_MADE_COUNT) {
-      return "I need cleaning!";
+      return "\nI need cleaning!";
     }
     if (remainingWater < coffee.getWater()) {
-      return "Sorry, not enough water!";
+      return "\nSorry, not enough water!";
     }
     if (remainingMilk < coffee.getMilk()) {
-      return "Sorry, not enough milk!";
+      return "\nSorry, not enough milk!";
     }
     if (remainingBeans < coffee.getBeans()) {
-      return "Sorry, not enough coffee beans!";
+      return "\nSorry, not enough coffee beans!";
     }
     if (remainingCups == 0) {
-      return "Sorry, not enough cups!";
+      return "\nSorry, not enough cups!";
     }
 
     remainingWater -= coffee.getWater();
@@ -45,7 +45,7 @@ public enum CoffeeMachine {
     remainingCups--;
     cleaningCounter++;
 
-    return "I have enough resources, making you a coffee!";
+    return "\nI have enough resources, making you a %s!".formatted(coffee.name().toLowerCase());
   }
 
   public String getRemainingIngredients() {
