@@ -31,7 +31,7 @@ Implementation of key components as enum singletons:
 - `CoffeeMachine`
 - `CoffeeMachineController`
 - `ConsoleIO`
-- `CommandManager`
+- `CommandRegistry`
 
 **Benefits:**
 - Guaranteed single instance
